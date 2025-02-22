@@ -19,6 +19,7 @@ class BookingRepository {
                 StatusCodes.INTERNAL_SERVER_ERROR);
         }
     }
+    
     async update(bookingId, data) {
         try {
             const booking = await Booking.findByPk(bookingId);
